@@ -1,18 +1,18 @@
 import React from 'react';
-import CardItem from './card_item';
 import '../styles/card.css';
 
 const Card = (props) => {
-  return props.data.map(prop => {
-    return (
-      <div  className="card">
-        <CardItem 
-          key={prop.id} 
-          item={prop} 
-        />
-      </div>
-    )
-  })
+  return (
+    <div className="card__items">
+      <div>{props.item.shortTitle}</div>
+      <div>{props.item.doi}</div>
+      <div>{props.item.publicationType}</div>
+      <div>{props.item.publicationDate}</div>
+      <div>views: {props.item.nViews}</div>
+      <div>downloads: {props.item.nDownloads}</div>
+      <div>{props.item.journalId}</div>
+    </div>
+    )  
 }
 
 export default Card;
