@@ -1,0 +1,14 @@
+.cards {
+  border: 1px solid green;
+  width: 75%;
+  margin: 0 auto; }
+  .cards__group {
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .cards__toggle {
+    border: 1px solid green;
+    padding-left: 5rem; }

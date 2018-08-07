@@ -1,0 +1,19 @@
+.cards {
+  border: 1px solid green; // to be deleted
+  width: 75%;
+  margin: 0 auto;
+
+  &__group {
+    border: 1px solid red; // to be deleted
+    margin: 0 auto;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  &__toggle {
+    border: 1px solid green; // to be deleted
+    padding-left: 5rem;
+  }
+}
