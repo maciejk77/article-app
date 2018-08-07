@@ -1,6 +1,8 @@
 .cards {
+  min-width: 15rem;
   border: 1px solid green;
-  width: 75%;
+  background-color: #eaeaea;
+  width: 98%;
   margin: 0 auto; }
   .cards__group {
     border: 1px solid red;
@@ -11,4 +13,6 @@
     justify-content: center; }
   .cards__toggle {
     border: 1px solid green;
-    padding-left: 5rem; }
+    padding: 1rem 0 1rem 1.5rem;
+    background-color: #eaeaea;
+    outline: none; }

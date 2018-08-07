@@ -1,5 +1,26 @@
 .card {
   border: 1px solid blue;
-  width: 30%;
+  min-width: 10rem;
   margin-bottom: 2px;
-  margin-right: 2px; }
+  margin-right: 2px;
+  color: green; }
+  .card__items {
+    border: 1px solid orangered;
+    margin: 2px; }
+
+.card-grid-view {
+  width: 32%; }
+
+.card-list-view {
+  width: 100%; }
+
+.card-abstract {
+  border: 1px solid yellowgreen;
+  white-space: wrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis; }
+
+.card-abstract:after {
+  top: -50px;
+  left: -50px; }
