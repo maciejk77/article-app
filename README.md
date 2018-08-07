@@ -2,7 +2,7 @@
 
 ### Project information
 
-This app renders to the screen cards with information about articles, there is a toggle to switch between shorter version and card with small description included. Clickthrough on card takes user to the page where full articles is displayed. Article data is taken from JSON feed, article template is in a form of <html> template to be rendered to the screen.
+This app renders to the screen cards with information about articles, there is a toggle to switch between shorter version and card with small description included (grid/list toggle). Clickthrough on card takes user to the page where full articles is displayed. Article data is taken from JSON feed, article template is in a form of <html> template to be rendered to the screen.
 
 The publications.json was copied over to this app scaffolded with ***create-react-app*** due to time saving need to focus on development not on env setup
 
@@ -13,15 +13,15 @@ The publications.json was copied over to this app scaffolded with ***create-reac
 
 ### Project requirements
 
-- small web app to present ```publications.json```` feed as a list of publications to browse
-- some visual aggreagations, nice to have visual effects
+- small web app to present ```publications.json``` feed as a list of publications to browse
+- some visual aggregations, nice to have visual effects
 - third-party libraries allowed via yarn
 - build and optimization tools allowed
 - web responsiveness
 - use of ECMA6
 - documentation
 - time limit 2 hours
-- React allowed provided that one of the views will not be implemeted with it
+- React allowed provided that one of the views will not be implemented with it
 - write tests with Jest, Mocha, Chai, Sinon and Enzyme
 
 - articles to be shown as cards
@@ -61,4 +61,5 @@ The publications.json was copied over to this app scaffolded with ***create-reac
 
 The [***live version of the below is available here***](https://google.com/) deployed to Heroku 
 
+Requested final output
 ![Screenshot](public/screenshot.png)
