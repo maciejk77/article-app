@@ -59,8 +59,6 @@ The publications.json was copied over to this app scaffolded with ***create-reac
 
 ### Screenshot
 
-The [***live version of the below is available here***](https://google.com/) deployed to Heroku 
-
 Requested final output
 ![Screenshot](public/screenshot.png)
 
