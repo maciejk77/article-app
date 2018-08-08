@@ -32,7 +32,7 @@ const Card = (props) => {
         <div className={cn("card__item", "card__abstract")} dangerouslySetInnerHTML={{ __html: abstract }}></div>
       }
       <div className="vd-wrapper">  
-        <div className="baz">
+        <div className="vd-group">
           <div className={cn("card__item", "card__views")}>
             {nViews}&nbsp;
             <i class="fa fa-eye"></i>
@@ -42,7 +42,7 @@ const Card = (props) => {
             <i class="fa fa-download"></i>
           </div>
         </div>
-        <div className="read">READ</div>
+        <div className="vd-read">READ</div>
       </div>
     </div>
   )  

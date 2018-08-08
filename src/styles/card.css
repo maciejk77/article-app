@@ -39,6 +39,10 @@
   display: flex;
   justify-content: space-between;
   padding-right: 1rem; }
+  .vd-wrapper__views {
+    font-style: italic; }
+  .vd-wrapper__download {
+    font-style: italic; }
 
 .card-grid-view {
   width: 32%; }
@@ -52,8 +56,10 @@
   justify-content: space-between;
   padding-right: 1rem; }
 
-.baz {
-  display: flex; }
+.vd-group {
+  display: flex;
+  font-style: italic; }
 
-.read {
-  align-self: center; }
+.vd-read {
+  align-self: center;
+  font-size: .7rem; }

@@ -55,8 +55,13 @@
   justify-content: space-between;
   padding-right: 1rem;
 
-  &__views {}
-  &__download {}
+  &__views {
+    font-style: italic;
+  }
+
+  &__download {
+    font-style: italic;
+  }
 }
 
 .card-grid-view {
@@ -74,10 +79,12 @@
   padding-right: 1rem;
 }
 
-.baz {
+.vd-group {
   display: flex;
+  font-style: italic;
 }
 
-.read {
+.vd-read {
   align-self: center;
+  font-size: .7rem;
 }

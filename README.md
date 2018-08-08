@@ -42,20 +42,20 @@ The publications.json was copied over to this app scaffolded with ***create-reac
 ### Steps completed
 - used ***create-react-app** to scaffold application
 - used ***node-sass-chokidar*** to transpile Sass to CSS on build, ***watch-css*** to transpile while developing
-- visual aggregations/effects?
-- third party packages/yarn -> sass-chokidar?
-- web responsivness?
-- use of ECMA6?
-- documented?
-- time?
-- React, but one view without?
-- tests?
+- use of ECMA6 (destructuring, classes, template strings, const/let)
+- documented in README, multiple commits to see the progress
 - articles as cards
-- toggle between grid and list
+- toggle between grid and list - clickable ***GRID/LIST VIEW***
 - render data on cards
+- font awesome icons
+- color_pallete to brighten the colours for left border and dot (red => lightcoral)
 
 ### To do / ideas
-- tbc
+- web responsiveness
+- date formatting
+- truncate abstract text to 3 lines and apply ellipsis
+- visual effects?
+- tests?
 
 ### Screenshot
 
