@@ -1,20 +1,21 @@
+@import './variables.scss';
+
 .card {
-  border-left: 1px solid #fff;
+  border-left: 1px solid $bg-light1;
   min-width: 10rem;
   margin-bottom: .5rem;
   margin-right: .5rem;
-  color: green;
-  background-color: #fff;
-  font-size: .8rem;
+  background-color: $bg-light1;
+  font-size: $base-size;
   font-family: sans-serif;
-  color: #474747;
+  color: $bg-dark1;
   
   &__dot {
     margin: .6rem .8rem;
     height: .6rem;
     width: .6rem;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: $bg-light1;
   }
 
   &__item {
@@ -23,13 +24,13 @@
   }
 
   &__title {
-    font-size: 1rem;
+    font-size: $title-size;
     line-height: 1.4rem;
   }
 
   &__link {
     text-decoration: none;
-    color: #41bef4;
+    color: $link;
     font-size: .75rem;
   }
 
@@ -87,5 +88,5 @@
 
 .vd-read {
   align-self: center;
-  font-size: .7rem;
+  font-size: $base-size-sm;
 }

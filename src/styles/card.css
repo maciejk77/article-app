@@ -3,9 +3,8 @@
   min-width: 10rem;
   margin-bottom: .5rem;
   margin-right: .5rem;
-  color: green;
   background-color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-family: sans-serif;
   color: #474747; }
   .card__dot {
@@ -13,7 +12,7 @@
     height: .6rem;
     width: .6rem;
     border-radius: 50%;
-    background-color: lightgray; }
+    background-color: #fff; }
   .card__item {
     margin: .25rem 0;
     padding-left: .5rem; }
@@ -59,4 +58,4 @@
 
 .vd-read {
   align-self: center;
-  font-size: .7rem; }
+  font-size: 0.7rem; }

@@ -1,6 +1,8 @@
+@import './variables.scss';
+
 .cards {
   min-width: 15rem;
-  background-color: #eaeaea;
+  background-color: $bg-light2;
   width: 98%;
   margin: 0 auto;
 
@@ -14,9 +16,9 @@
   
   &__toggle {
     padding: 1rem 0 1rem .5rem;
-    background-color: #eaeaea;
+    background-color: $bg-light2;
     outline: none;
     border: none;
-    font-size: 1.3rem;
+    font-size: $base-size-lg;
   }
 }
