@@ -17,9 +17,7 @@ const Card = (props) => {
             <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{publicationDate.split(' ')[0]}</div>
           </div>
         }
-      </div>
-      
-      
+      </div>   
       <div className={cn("card__item", "card__title")}>{shortTitle}</div>
       <div className={cn("card__item")}><a href={link} target="_blank" className="card__link">{link}</a></div>
       {!props.is_list_view &&

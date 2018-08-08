@@ -34,12 +34,13 @@
   }
 
   &__abstract {
+    // display: -webkit-box;
+    // -webkit-line-clamp: 3;
+    // -webkit-box-orient: vertical;
+    // text-overflow: ellipsis;
+    height: 3.3rem;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    height: 3.5rem; 
+    padding: 0 1rem 0 .5rem;
   }
 }
 

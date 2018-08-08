@@ -63,3 +63,6 @@ The [***live version of the below is available here***](https://google.com/) dep
 
 Requested final output
 ![Screenshot](public/screenshot.png)
+
+My version of the requested
+![Screenshot](public/screenshot2.png)
