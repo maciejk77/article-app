@@ -1,25 +1,51 @@
 import React from 'react';
 import '../styles/card.css';
+import cn from 'classnames';
 
 const Card = (props) => {
   const { shortTitle, doi, publicationType, publicationDate, 
           abstract, nViews, nDownloads, journalId } = props.item;
-  const link = `http://doi.org/${doi}`;
+  const link = `http://doi.org/${doi.toLowerCase()}`;
           
-  return (
+  return (  
     <div>
-      <div className="dot" style={{backgroundColor: props.color_palette[journalId.toLowerCase()]}}></div>
-      <div>{shortTitle}</div>
-      <div>{link}</div>
-      <div>{publicationType}</div>
-      <div>{publicationDate}</div>
-      {props.is_list_view &&   
-        <div className="card-abstract" dangerouslySetInnerHTML={{ __html: abstract }}></div>
+      <div className="foo">
+        <div className="card__dot" style={{backgroundColor: props.color_palette[journalId.toLowerCase()]}}></div>
+        {props.is_list_view &&
+          <div className="td-wrapper">  
+            <div className={cn("card__item", "card__type")}>{publicationType}</div>
+            <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{publicationDate.split(' ')[0]}</div>
+          </div>
+        }
+      </div>
+      
+      
+      <div className={cn("card__item", "card__title")}>{shortTitle}</div>
+      <div className={cn("card__item")}><a href={link} target="_blank" className="card__link">{link}</a></div>
+      {!props.is_list_view &&
+        <div className="td-wrapper">  
+          <div className={cn("card__item", "card__type")}>{publicationType}</div>
+          <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{publicationDate.split(' ')[0]}</div>
+        </div>
       }
-      <div>{nViews}</div>
-      <div>{nDownloads}</div>
+      {props.is_list_view &&   
+        <div className={cn("card__item", "card__abstract")} dangerouslySetInnerHTML={{ __html: abstract }}></div>
+      }
+      <div className="vd-wrapper">  
+        <div className="baz">
+          <div className={cn("card__item", "card__views")}>
+            {nViews}&nbsp;
+            <i class="fa fa-eye"></i>
+          </div>
+          <div className={cn("card__item", "card__downloads")}>
+            {nDownloads}&nbsp;
+            <i class="fa fa-download"></i>
+          </div>
+        </div>
+        <div className="read">READ</div>
+      </div>
     </div>
-    )  
+  )  
 }
 
 export default Card;
