@@ -1,18 +1,17 @@
 .cards {
   min-width: 15rem;
-  border: 1px solid green;
   background-color: #eaeaea;
   width: 98%;
   margin: 0 auto; }
   .cards__group {
-    border: 1px solid red;
     margin: 0 auto;
     padding: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
   .cards__toggle {
-    border: 1px solid green;
-    padding: 1rem 0 1rem 1.5rem;
+    padding: 1rem 0 1rem .5rem;
     background-color: #eaeaea;
-    outline: none; }
+    outline: none;
+    border: none;
+    font-size: 1.3rem; }

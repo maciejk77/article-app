@@ -1,12 +1,12 @@
 .cards {
   min-width: 15rem;
-  border: 1px solid green; // to be deleted
+  //border: 1px solid green; // to be deleted
   background-color: #eaeaea;
   width: 98%;
   margin: 0 auto;
 
   &__group {
-    border: 1px solid red; // to be deleted
+    //border: 1px solid red; // to be deleted
     margin: 0 auto;
     padding: 2px;
     display: flex;
@@ -15,9 +15,11 @@
   }
   
   &__toggle {
-    border: 1px solid green; // to be deleted
-    padding: 1rem 0 1rem 1.5rem;
+    //border: 1px solid green; // to be deleted
+    padding: 1rem 0 1rem .5rem;
     background-color: #eaeaea;
     outline: none;
+    border: none;
+    font-size: 1.3rem;
   }
 }

@@ -1,13 +1,16 @@
 .card {
-  border: 1px solid blue; // to be deleted
+  border-left: 1px solid #fff;
   min-width: 10rem;
-  margin-bottom: 2px;
-  margin-right: 2px;
-
+  margin-bottom: 4px;
+  margin-right: 4px;
   color: green;
+  background-color: #fff;
+  font-size: .8rem;
+  font-family: sans-serif;
+  color: #474747;
 
   &__items {
-    border: 1px solid orangered; // to be deleted
+    //border: 1px solid orangered; // to be deleted
     margin: 2px;
   }
 }
@@ -17,18 +20,21 @@
 }
 
 .card-list-view {
-  width: 100%;
+  width: 98%;
 }
 
 .card-abstract {
-  border: 1px solid yellowgreen;
-  white-space: wrap;
   overflow: hidden;
-  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  height: 3.5rem; 
 }
 
-.card-abstract:after {
-  top: -50px;
-  left: -50px;
+.dot {
+  height: .6rem;
+  width: .6rem;
+  border-radius: 50%;
+  background-color: lightgray;
 }
