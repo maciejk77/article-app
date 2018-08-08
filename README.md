@@ -64,5 +64,8 @@ The [***live version of the below is available here***](https://google.com/) dep
 Requested final output
 ![Screenshot](public/screenshot.png)
 
-My version of the requested
+My version of the requested (Grid View)
 ![Screenshot](public/screenshot2.png)
+
+My version of the requested (List View)
+![Screenshot](public/screenshot3.png)
