@@ -11,9 +11,9 @@
   color: $bg-dark1;
   
   &__dot {
-    margin: .6rem .8rem;
-    height: .6rem;
-    width: .6rem;
+    margin: .6rem .75rem;
+    height: .75rem;
+    width: .75rem;
     border-radius: 50%;
     background-color: $bg-light1;
   }
@@ -32,16 +32,6 @@
     text-decoration: none;
     color: $link;
     font-size: .75rem;
-  }
-
-  &__abstract {
-    // display: -webkit-box;
-    // -webkit-line-clamp: 3;
-    // -webkit-box-orient: vertical;
-    // text-overflow: ellipsis;
-    height: 3.3rem;
-    overflow: hidden;
-    padding: 0 1rem 0 .5rem;
   }
 }
 
@@ -74,7 +64,7 @@
   width: 98%;
 }
 
-.foo {
+.card__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,3 +80,4 @@
   align-self: center;
   font-size: $base-size-sm;
 }
+

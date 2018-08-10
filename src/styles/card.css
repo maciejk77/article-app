@@ -8,9 +8,9 @@
   font-family: sans-serif;
   color: #474747; }
   .card__dot {
-    margin: .6rem .8rem;
-    height: .6rem;
-    width: .6rem;
+    margin: .6rem .75rem;
+    height: .75rem;
+    width: .75rem;
     border-radius: 50%;
     background-color: #fff; }
   .card__item {
@@ -23,10 +23,6 @@
     text-decoration: none;
     color: #41bef4;
     font-size: .75rem; }
-  .card__abstract {
-    height: 3.3rem;
-    overflow: hidden;
-    padding: 0 1rem 0 .5rem; }
 
 .td-wrapper {
   display: flex; }
@@ -46,7 +42,7 @@
 .card-list-view {
   width: 98%; }
 
-.foo {
+.card__header {
   display: flex;
   align-items: center;
   justify-content: space-between;

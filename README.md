@@ -49,11 +49,11 @@ The publications.json was copied over to this app scaffolded with ***create-reac
 - render data on cards
 - font awesome icons
 - color_pallete to brighten the colours for left border and dot (red => lightcoral)
+- truncated abstract text to 3 lines and ellipsis applied
 
 ### To do / ideas
 - web responsiveness
 - date formatting
-- truncate abstract text to 3 lines and apply ellipsis
 - visual effects?
 - tests?
 

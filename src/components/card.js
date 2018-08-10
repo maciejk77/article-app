@@ -9,7 +9,7 @@ const Card = (props) => {
           
   return (  
     <div>
-      <div className="foo">
+      <div className="card__header">
         <div className="card__dot" style={{backgroundColor: props.color_palette[journalId.toLowerCase()]}}></div>
         {props.is_list_view &&
           <div className="td-wrapper">  
@@ -27,7 +27,12 @@ const Card = (props) => {
         </div>
       }
       {props.is_list_view &&   
-        <div className={cn("card__item", "card__abstract")} dangerouslySetInnerHTML={{ __html: abstract }}></div>
+        <div 
+          className="card__item" 
+          dangerouslySetInnerHTML={{ __html: abstract }}
+          style={{overflow: "hidden", display: "-webkit-box", WebkitLineClamp: "3", WebkitBoxOrient: "vertical", padding: "0 .5rem"}}
+        >
+        </div>
       }
       <div className="vd-wrapper">  
         <div className="vd-group">
