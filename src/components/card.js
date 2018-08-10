@@ -1,12 +1,17 @@
 import React from 'react';
 import '../styles/card.css';
 import cn from 'classnames';
+import moment from 'moment';
 
 const Card = (props) => {
   const { shortTitle, doi, publicationType, publicationDate, 
           abstract, nViews, nDownloads, journalId } = props.item;
+  
   const link = `http://doi.org/${doi.toLowerCase()}`;
-          
+  
+  const d = new Date(publicationDate);
+  const date = moment([d.getFullYear(), d.getMonth(), d.getDay()]).format('DD MMM YYYY');
+
   return (  
     <div>
       <div className="card__header">
@@ -14,7 +19,7 @@ const Card = (props) => {
         {props.is_list_view &&
           <div className="td-wrapper">  
             <div className={cn("card__item", "card__type")}>{publicationType}</div>
-            <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{publicationDate.split(' ')[0]}</div>
+            <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{date}</div>
           </div>
         }
       </div>   
@@ -23,7 +28,7 @@ const Card = (props) => {
       {!props.is_list_view &&
         <div className="td-wrapper">  
           <div className={cn("card__item", "card__type")}>{publicationType}</div>
-          <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{publicationDate.split(' ')[0]}</div>
+          <div className={cn("card__item", "card__date")}>-&nbsp;&nbsp;{date}</div>
         </div>
       }
       {props.is_list_view &&   
@@ -38,11 +43,11 @@ const Card = (props) => {
         <div className="vd-group">
           <div className={cn("card__item", "card__views")}>
             {nViews}&nbsp;
-            <i class="fa fa-eye"></i>
+            <i className="fa fa-eye"></i>
           </div>
           <div className={cn("card__item", "card__downloads")}>
             {nDownloads}&nbsp;
-            <i class="fa fa-download"></i>
+            <i className="fa fa-download"></i>
           </div>
         </div>
         <div className="vd-read">READ</div>
